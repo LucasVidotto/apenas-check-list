@@ -1,0 +1,72 @@
+* { margin: 0;  padding: 0; list-style: none; border: 0;  text-decoration: none;}
+body{
+    background-image: url('./city.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+input, label {
+    vertical-align: middle;
+}
+
+/* firefox */
+div:after, ol:after, li:after, form:after, ul:after, dl:after,q:after {
+    content:".";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    height:0;
+    overflow:hidden;
+}
+
+.lista li {
+    border-bottom:1px solid #fff;
+    border-left:1px solid #fff;
+    border-radius: 5px;
+    padding:10px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    width: 85%;
+    color:white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+}
+.lista li {
+    background: rgba(255, 255, 255, 0.1);
+    color:white;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+
+}
+.lista li:hover {
+    color:white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+
+}
+.lista li label {
+    cursor:pointer;
+    color:#333;
+    font-size:1.2em;
+    line-height:1.3em;
+}
+.lista li:hover label {
+    color:white;
+}
+.lista input[type="checkbox"], .multi-column-check input[type="checkbox"] {
+    cursor:pointer;margin-right:5px;
+}
+.lista li.checked {
+    background: #e5f8ce url(visto.png) no-repeat 10px center;
+    padding-left:32px;
+}
+.lista .checked input[type="checkbox"] {
+    display: none;
+}
+.lista li.checked:hover input[type="checkbox"] {
+    display: inline !important;
+}
+.lista li.checked:hover{
+    background: #e5f8ce none !important;padding-left:10px;
+}
